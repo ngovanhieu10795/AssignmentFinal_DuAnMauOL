@@ -1,8 +1,5 @@
 package com.example.myapplication.model;
 
-import com.google.firebase.database.IgnoreExtraProperties;
-
-@IgnoreExtraProperties
 public class Sach {
     private String maSach;
     private String maTheLoai;
@@ -15,7 +12,8 @@ public class Sach {
     public Sach() {
     }
 
-    public Sach(String maSach, String maTheLoai, String tenSach, String tacGia, String NXB, double giaBia, int soLuong) {
+    public Sach(String maSach, String maTheLoai, String tenSach, String tacGia,
+                String NXB, double giaBia, int soLuong) {
         this.maSach = maSach;
         this.maTheLoai = maTheLoai;
         this.tenSach = tenSach;

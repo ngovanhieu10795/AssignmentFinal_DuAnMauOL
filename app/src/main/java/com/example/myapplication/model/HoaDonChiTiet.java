@@ -1,7 +1,5 @@
 package com.example.myapplication.model;
-import com.google.firebase.database.IgnoreExtraProperties;
 
-@IgnoreExtraProperties
 public class HoaDonChiTiet {
     private int maHDCT;
     private HoaDon hoaDon;

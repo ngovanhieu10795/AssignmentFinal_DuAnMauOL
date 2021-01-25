@@ -1,38 +1,35 @@
 package com.example.myapplication.model;
 
-import com.google.firebase.database.IgnoreExtraProperties;
-
-@IgnoreExtraProperties
 public class TheLoai {
-    private String maTheloai;
-    private String tenTheloai;
+    private String maTheLoai;
+    private String tenTheLoai;
     private String moTa;
-    private String viTri;
+    private int viTri;
 
     public TheLoai() {
     }
 
-    public TheLoai(String maTheloai, String tenTheloai, String moTa, String viTri) {
-        this.maTheloai = maTheloai;
-        this.tenTheloai = tenTheloai;
+    public TheLoai(String maTheLoai, String tenTheLoai, String moTa, int viTri) {
+        this.maTheLoai = maTheLoai;
+        this.tenTheLoai = tenTheLoai;
         this.moTa = moTa;
         this.viTri = viTri;
     }
 
-    public String getMaTheloai() {
-        return maTheloai;
+    public String getMaTheLoai() {
+        return maTheLoai;
     }
 
-    public void setMaTheloai(String maTheloai) {
-        this.maTheloai = maTheloai;
+    public void setMaTheLoai(String maTheLoai) {
+        this.maTheLoai = maTheLoai;
     }
 
-    public String getTenTheloai() {
-        return tenTheloai;
+    public String getTenTheLoai() {
+        return tenTheLoai;
     }
 
-    public void setTenTheloai(String tenTheloai) {
-        this.tenTheloai = tenTheloai;
+    public void setTenTheLoai(String tenTheLoai) {
+        this.tenTheLoai = tenTheLoai;
     }
 
     public String getMoTa() {
@@ -43,16 +40,16 @@ public class TheLoai {
         this.moTa = moTa;
     }
 
-    public String getViTri() {
+    public int getViTri() {
         return viTri;
     }
 
-    public void setViTri(String viTri) {
+    public void setViTri(int viTri) {
         this.viTri = viTri;
     }
 
     @Override
     public String toString() {
-        return getMaTheloai() + " | " + getTenTheloai();
+        return getMaTheLoai() + " | " + getTenTheLoai();
     }
 }

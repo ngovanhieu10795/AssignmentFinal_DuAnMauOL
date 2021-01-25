@@ -1,36 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Assignment"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".LoginScreen"></activity>
-        <activity android:name=".SignUpScreen" />
-        <activity android:name=".ForgotPassword" />
-        <activity android:name=".Activity.MainActivity" />
-        <activity android:name=".Activity.TheLoaiActivity" />
-        <activity android:name=".Activity.HoaDonChiTietActivity" />
-        <activity android:name=".Activity.HoaDonDetailActivity" />
-        <activity android:name=".Activity.ListBanChayActivity" />
-        <activity android:name=".Activity.ListHoaDonActivity" />
-        <activity android:name=".Activity.ListSachActivity" />
-        <activity android:name=".Activity.ListThongKeActivity" />
-        <activity android:name=".Activity.SachDetailActivity" />
-        <activity android:name=".Activity.ThemHoaDonActivity" />
-        <activity android:name=".Activity.ThemSachActivity" />
-        <activity android:name=".Activity.TheLoaiDetailActivity" />
-        <activity android:name=".Activity.ListTheLoaiActivity" />
-        <activity android:name=".Activity.NguoidungActivity"/>
-        <activity android:name=".Activity.ThemNguoiDungActivity"/>
-        <activity android:name=".Activity.ChiTietNguoiDungActivity"/>
-        <activity android:name=".Activity.DoiMatKhauActivity"/>
-
-        <activity android:name=".LoadingScreen">
+        android:theme="@style/Theme.AssignmentMob2041">
+        <activity android:name=".screen.ThongKeDoanhThuActivity"></activity>
+        <activity android:name=".screen.LuotSachBanChayActivity" />
+        <activity android:name=".screen.ListHoaDonChiTietByIDActivity" />
+        <activity android:name=".screen.HoaDonChiTietActivity" />
+        <activity android:name=".screen.HoaDonActivity" />
+        <activity android:name=".screen.ListHoaDonActivity" />
+        <activity android:name=".screen.ListBookActivity" />
+        <activity android:name=".screen.ThemSachActivity" />
+        <activity android:name=".screen.ThemTheLoaiActivity" />
+        <activity android:name=".screen.ChiTietTheLoaiActivity" />
+        <activity android:name=".screen.TheLoaiActivity" />
+        <activity android:name=".screen.ListTheLoaiActivity" />
+        <activity android:name=".screen.NguoiDungDetailActivity" />
+        <activity android:name=".screen.NguoiDungActivity" />
+        <activity android:name=".screen.ListNguoiDungActivity" />
+        <activity android:name=".screen.ChangePasswordActivity" />
+        <activity android:name=".screen.loginScreen" />
+        <activity android:name=".screen.MainActivity" />
+        <activity android:name=".screen.splashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

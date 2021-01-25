@@ -1,16 +1,19 @@
 package com.example.myapplication.model;
 
 public class NguoiDung {
-    String userName;
-    String password;
-    String hoTen;
-    String gMail;
-public NguoiDung(){}
-    public NguoiDung(String userName, String password, String gMail, String hoTen) {
+    private String userName;
+    private String password;
+    private String phone;
+    private String hoTen;
+
+    public NguoiDung() {
+    }
+
+    public NguoiDung(String userName, String password, String phone, String hoTen) {
         this.userName = userName;
         this.password = password;
+        this.phone = phone;
         this.hoTen = hoTen;
-        this.gMail = gMail;
     }
 
     public String getUserName() {
@@ -29,12 +32,12 @@ public NguoiDung(){}
         this.password = password;
     }
 
-    public String getgMail() {
-        return gMail;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setgMail(String gMail) {
-        this.gMail = gMail;
+    public void setPhone(String phone) {
+        this.phone = phone;
     }
 
     public String getHoTen() {
@@ -47,11 +50,11 @@ public NguoiDung(){}
 
     @Override
     public String toString() {
-        return "NguoiDung {"+
-                "userName = '"+userName+'\''+
-                ", password = ' "+password + '\''+
-                ", gmail = ' "+gMail + '\''+
-                ", hoTen = ' "+hoTen + '\''+
+        return "NguoiDung{" +
+                "userName='" + userName + '\'' +
+                ", password='" + password + '\'' +
+                ", phone='" + phone + '\'' +
+                ", hoTen='" + hoTen + '\'' +
                 '}';
     }
 }
